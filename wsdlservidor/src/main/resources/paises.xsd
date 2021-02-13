@@ -2,6 +2,7 @@
            xmlns:tns="http://exemplo.com/wsdlservidor/assets"
            targetNamespace="http://exemplo.com/wsdlservidor/assets"
            elementFormDefault="qualified">
+
     <xs:element name="getPaisRequest">
         <xs:complexType>
             <xs:sequence>
@@ -13,7 +14,7 @@
     <xs:element name="getPaisResponse">
         <xs:complexType>
             <xs:sequence>
-                <xs:element name="pais" type="tns:pais" />
+                <xs:element name="pais" type="tns:pais"/>
             </xs:sequence>
         </xs:complexType>
     </xs:element>

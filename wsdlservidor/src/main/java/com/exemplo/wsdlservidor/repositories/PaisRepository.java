@@ -11,11 +11,10 @@ import java.util.Map;
 
 @Component
 public class PaisRepository {
-
     private static final Map<String, Pais> paises = new HashMap<>();
 
     @PostConstruct
-    public void iniData() {
+    public void initData() {
         Pais brasil = new Pais();
         brasil.setNome("Brasil");
         brasil.setCapital("Brasília");
@@ -32,7 +31,7 @@ public class PaisRepository {
     }
 
     public Pais buscarPorPais(String nome) {
-        Assert.notNull(nome, "O país não pode ser nulo!");
+        Assert.notNull(nome, "O país não pode ser nulo.");
         return paises.get(nome);
     }
 
